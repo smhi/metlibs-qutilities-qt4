@@ -1,0 +1,26 @@
+Source: metlibs-qt-qutilities
+Priority: optional
+Maintainer: Borge Moe <borge.moe@met.no>
+Build-Depends:  debhelper (>= 7), autotools-dev, g++,
+  autoconf (>=2.61), automake (>= 1.10), libtool (>= 1.5),
+  metlibs-milogger-dev (>= 5.0.1),
+  libboost-dev, libqt4-dev, pkg-config
+Standards-Version: 3.7.3
+Section: libs
+
+Package: metlibs-qutilities-dev
+Section: libdevel
+Architecture: any
+Depends: libqt4-dev,
+ metlibs-milogger-dev (>= 5.0.1),
+ ${misc:Depends}
+Description: qUtilities.
+ metlibs qUtilities.
+
+Package: metlibs-translations
+Section: libs
+Architecture: all
+Description: Qt4 translation files for metlibs
+ Contains translations for metlibs dialogs.
+ .
+ At present, nb, sv and de are included for qUtilities.
